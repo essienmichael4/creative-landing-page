@@ -26,7 +26,7 @@ body .container aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 1000;
+  z-index: 5000;
   -webkit-transition: .5s ease;
   transition: .5s ease;
   overflow: hidden;
@@ -181,6 +181,7 @@ body .container main {
 }
 
 body .container main header {
+  position: relative;
   width: 100%;
   height: 6rem;
   display: -webkit-box;
@@ -195,6 +196,7 @@ body .container main header {
 }
 
 body .container main header nav {
+  z-index: 2000;
   height: 100%;
   width: 85%;
   display: -webkit-box;
@@ -259,6 +261,170 @@ body .container main header nav ul::before {
   background-color: #ebebeb;
   height: 0.55px;
   opacity: .5;
+}
+
+body .container main header .callToActionServices {
+  position: absolute;
+  margin-left: 0;
+  margin-top: 0;
+  top: -25rem;
+  left: 0;
+  width: 100%;
+  height: 25rem;
+  background-color: #0000e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10rem 12rem 0 12rem;
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
+}
+
+body .container main header .callToActionServices .serviceContainer {
+  position: relative;
+  height: 12rem;
+  width: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container main header .callToActionServices .serviceContainer h3 {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  z-index: 2050;
+}
+
+body .container main header .callToActionServices .serviceContainer .now {
+  position: relative;
+  height: 0;
+  width: 100%;
+  background-color: #5555d6;
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
+  overflow: hidden;
+}
+
+body .container main header .callToActionServices .serviceContainer .now::before {
+  position: absolute;
+  content: "";
+  top: -10rem;
+  right: -10rem;
+  width: 15rem;
+  height: 9.6rem;
+  background-color: blue;
+  border-radius: 30px;
+  -webkit-transform: rotate(130deg);
+          transform: rotate(130deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .container main header .callToActionServices .serviceContainer h3:hover ~ .now {
+  height: 12rem;
+  width: 15rem;
+}
+
+body .container main header .callToActionServices .serviceContainer h3:hover ~ .now::before {
+  top: -2rem;
+  right: -2rem;
+}
+
+body .container main header .callToActionLocation {
+  position: absolute;
+  margin-left: 0;
+  margin-top: 0;
+  top: -25rem;
+  left: 0;
+  width: 100%;
+  height: 25rem;
+  background-color: #0000e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10rem 12rem 0 12rem;
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
+}
+
+body .container main header .callToActionLocation .serviceContainer {
+  position: relative;
+  height: 12rem;
+  width: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container main header .callToActionLocation .serviceContainer h3 {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  z-index: 2050;
+}
+
+body .container main header .callToActionLocation .serviceContainer .now {
+  position: relative;
+  height: 0;
+  width: 100%;
+  background-color: #5555d6;
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
+  overflow: hidden;
+}
+
+body .container main header .callToActionLocation .serviceContainer .now::before {
+  position: absolute;
+  content: "";
+  top: -10rem;
+  right: -10rem;
+  width: 15rem;
+  height: 9.6rem;
+  background-color: blue;
+  border-radius: 30px;
+  -webkit-transform: rotate(130deg);
+          transform: rotate(130deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .container main header .callToActionLocation .serviceContainer h3:hover ~ .now {
+  height: 12rem;
+  width: 15rem;
+}
+
+body .container main header .callToActionLocation .serviceContainer h3:hover ~ .now::before {
+  top: -2rem;
+  right: -2rem;
+}
+
+body .container main header .ctaactive {
+  top: 0;
 }
 
 body .container main section {
